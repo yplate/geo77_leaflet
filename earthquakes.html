@@ -53,6 +53,16 @@
 	maxZoom: 20,
 	attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
   });
+     
+  // Add basemaps dictionary
+  var mydictbms = {
+      "Open Street Map": osm_basemap,
+      "Open Topo Map": OpenTopoMap,
+      "Dark Theme Map": Stadia_AlidadeSmoothDark
+  };
+      
+  // Layer control
+  var legend = L.control.layers(mydictbms).addTo(mymap);
  </script>
 
     
